@@ -52,10 +52,10 @@ client.on("ready", function(){
 	
   setInterval( () => {
 		var currentdate = new Date();
-		if(currentdate.getHours() == 13 && currentdate.getMinutes() == 37 && currentdate.getSeconds() == 1) {
+		if(currentdate.getHours() == 12 && currentdate.getMinutes() == 37) {
 			bot.channels.get(process.env.BOT).send(`${process.env.ME} ${process.env.TAKO}\n Brüder vergesst euren **t!daily** nicht!  💴`)
 		}
-	}, 1000);
+	}, 60000);
 });
 
 client.on("message", msg => {
