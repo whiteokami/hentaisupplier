@@ -49,13 +49,6 @@ client.on("ready", function(){
   }
 
   postHentai();
-	
-  setInterval( () => {
-		var currentdate = new Date();
-		if(currentdate.getHours() == 12 && currentdate.getMinutes() == 37) {
-			bot.channels.get(process.env.BOT).send(`${process.env.ME} ${process.env.TAKO}\n Brüder vergesst euren **t!daily** nicht!  💴`)
-		}
-	}, 60000);
 });
 
 client.on("message", msg => {
