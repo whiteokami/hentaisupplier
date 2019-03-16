@@ -1,5 +1,6 @@
 const Discord = require("discord.js");
 var client = new Discord.Client();
+var cron = require('cron');
 var tarchan = process.env.TARCHAN;
 var delay = 3600000;
 const snoowrap = require("snoowrap");
@@ -49,6 +50,12 @@ client.on("ready", function(){
   }
 
   postHentai();
+	
+  var cj = cron.job('* 37 12 * * *', () => {
+    client.channels.get(process.env.BOT).send("process.env.ME process.env.TAKO\n Brüder vergesst euren **t!daily** nicht!  💴");
+    console.log("Ehrenhaft Brüder an t!daily erinnert");
+  });
+  cj.start();
 });
 
 client.on("message", msg => {
