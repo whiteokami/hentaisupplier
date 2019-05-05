@@ -40,7 +40,8 @@ client.on("ready", function(){
         /*for(i=0; i<gl.length; i++) {
           client.channels.get(gl[i]).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
         }*/
-	client.channels.get("525789197743947778").send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
+	client.channels.get("566019003135295509").send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
+	client.channels.get("492774468591288390").send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
         console.log(`${datetime} Posted new image → ${posts[0].title} https://reddit.com${posts[0].permalink}`);
         setTimeout(() => {
           const tail = posts.splice(1);
