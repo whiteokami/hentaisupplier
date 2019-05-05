@@ -11,7 +11,7 @@ const r = new snoowrap({
 });
 var emc = "0x00FFFF";
 var logc = process.env.LOGC;
-var guildlist = [
+var gl = [
 	"566019003135295509",
 	"492774468591288390"
 ];
@@ -19,7 +19,7 @@ var guildlist = [
 
 client.on('error', function(){
 	console.log("ERROR");
-	console.error;
+	//console.error;
 });
 
 client.on("ready", function(){
@@ -38,7 +38,7 @@ client.on("ready", function(){
         var currentdate = new Date();
         var datetime = "[" + currentdate.getDate() + "." + (currentdate.getMonth()+1) + "." + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds() + "]";
         for(i=0; i<guildlist.length; i++) {
-          client.channels.get(guildlist[i]).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
+          client.channels.get(gl[i]).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
         }
         console.log(`${datetime} Posted new image → ${posts[0].title} https://reddit.com${posts[0].permalink}`);
         setTimeout(() => {
