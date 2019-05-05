@@ -37,9 +37,9 @@ client.on("ready", function(){
       if(posts.length > 0) {
         var currentdate = new Date();
         var datetime = "[" + currentdate.getDate() + "." + (currentdate.getMonth()+1) + "." + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds() + "]";
-        for(i=0; i<gl.length; i++) {
+        /*for(i=0; i<gl.length; i++) {
           client.channels.get(gl[i]).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
-        }
+        }*/
         console.log(`${datetime} Posted new image → ${posts[0].title} https://reddit.com${posts[0].permalink}`);
         setTimeout(() => {
           const tail = posts.splice(1);
