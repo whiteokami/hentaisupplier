@@ -1,6 +1,5 @@
 const Discord = require("discord.js");
 var client = new Discord.Client();
-var tarchan = process.env.TARCHAN;
 var delay = 3600000;
 const snoowrap = require("snoowrap");
 const r = new snoowrap({
@@ -12,12 +11,12 @@ const r = new snoowrap({
 });
 var emc = "0x00FFFF";
 var logc = process.env.LOGC;
+var guildlist = [process.env.TARCHAN];
 
 
 client.on('error', function(){
 	console.log("ERROR");
 	console.error;
-	console.log("Restarting bot");
 });
 
 client.on("ready", function(){
@@ -35,7 +34,9 @@ client.on("ready", function(){
       if(posts.length > 0) {
         var currentdate = new Date();
         var datetime = "[" + currentdate.getDate() + "." + (currentdate.getMonth()+1) + "." + currentdate.getFullYear() + " @ " + currentdate.getHours() + ":" + currentdate.getMinutes() + ":" + currentdate.getSeconds() + "]";
-        client.channels.get(tarchan).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
+        for(i=0; i<guildlist.length; i++) {
+          client.channels.get(guildlist[i]).send(`"${posts[0].title}" ${posts[0].url}\n→ https://reddit.com${posts[0].permalink}`);
+        }
         console.log(`${datetime} Posted new image → ${posts[0].title} https://reddit.com${posts[0].permalink}`);
         setTimeout(() => {
           const tail = posts.splice(1);
@@ -49,6 +50,7 @@ client.on("ready", function(){
   }
 
   postHentai();
+
 });
 
 client.on("message", msg => {
@@ -90,10 +92,10 @@ client.on("message", msg => {
 
             client.channels.get(logc).send(logoem)
           }
-          msg.channel.send(`Be careful what you write here all messages outside of servers are getting logged!\nIf you wrote something private, dont worry the logs are kept secret and won't be used for anything.`);
+          msg.channel.send(`Be careful what you write here all messages outside of servers are getting logged!\nIf you wrote something private, dont worry the logs are kept secret and won't be used for anything.\nThis bot was made by @suretic / suretic#5364`);
         }else{
           client.channels.get(logc).send(logem);
-          msg.channel.send(`Be careful what you write here all messages outside of servers are getting logged!\nIf you wrote something private, dont worry the logs are kept secret and won't be used for anything.`);
+          msg.channel.send(`Be careful what you write here all messages outside of servers are getting logged!\nIf you wrote something private, dont worry the logs are kept secret and won't be used for anything.\nThis bot was made by @suretic / suretic#5364`);
         }
       }
     }
