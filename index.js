@@ -11,7 +11,10 @@ const r = new snoowrap({
 });
 var emc = "0x00FFFF";
 var logc = process.env.LOGC;
-var guildlist = process.env.TARCHAN;
+var guildlist = [
+	"566019003135295509",
+	"492774468591288390"
+];
 
 
 client.on('error', function(){
