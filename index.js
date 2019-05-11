@@ -1,3 +1,4 @@
+// not in use //
 const Discord = require("discord.js");
 var client = new Discord.Client();
 var delay = 3600000;
