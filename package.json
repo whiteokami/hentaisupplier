@@ -2,14 +2,18 @@
   "name": "hentaisupplier",
   "version": "1.0.0",
   "description": "a discord bot that mirrors /r/hentai",
-  "main": "index.js",
+  "main": "hs_v2.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node hs_v2.js"
   },
   "author": "suretic",
   "license": "ISC",
   "dependencies": {
+    "axios": "^0.18.0",
+    "discord": "^0.8.2",
     "discord.js": "^11.4.2",
+    "got": "^7.1.0",
+    "node-cron": "^2.0.3",
     "snoowrap": "^1.15.2"
   }
 }
