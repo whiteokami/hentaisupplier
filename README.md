@@ -1,6 +1,7 @@
 # hentaisupplier
 
 This is a Discord bot that mirrors r/hentai.
+It posts every hour.
 
 ## example
 You can see an example of the bot posting here:
