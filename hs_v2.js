@@ -23,7 +23,7 @@ for (const file of commandFiles) {
 
 // vars
 var msgc = 0;
-var delay = 450000;
+var delay = 3600000;
 var statlog = "526042083476111363";
 
 // error event
