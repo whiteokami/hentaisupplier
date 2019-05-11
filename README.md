@@ -4,8 +4,7 @@ This is a Discord bot that mirrors r/hentai.
 
 ## example
 You can see an example of the bot posting here:
-![post example](https://i.imgur.com/)
-(adding an image soon)
+![post example](https://i.imgur.com/794Vn3o.png)
 
 ## adding the bot
 If you'd like to have the bot on your server too, just hit me up on Twitter (@suretic) or Discord (suretic#5364).
