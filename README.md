@@ -6,6 +6,7 @@ This is a Discord bot that mirrors r/hentai.
 You can see an example of the bot posting here:
 
 ![post example](https://i.imgur.com/794Vn3o.png)
+
 (real posts are not blurred)
 
 ## adding the bot
