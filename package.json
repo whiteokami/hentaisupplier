@@ -9,7 +9,6 @@
   "author": "suretic",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.18.0",
     "discord": "^0.8.2",
     "discord.js": "^11.4.2",
     "got": "^7.1.0",
