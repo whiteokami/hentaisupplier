@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<!--
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣷⣬⡛⣿⣿⣿⣯⢻
+⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡟⢻⣿⣿⢟⣻⣿⣿⣿⣿⣿⣿⣮⡻⣿⣿⣧
+⣿⣿⣿⣿⣿⢻⣿⣿⣿⣿⣿⣿⣆⠻⡫⣢⠿⣿⣿⣿⣿⣿⣿⣿⣷⣜⢻⣿
+⣿⣿⡏⣿⣿⣨⣝⠿⣿⣿⣿⣿⣿⢕⠸⣛⣩⣥⣄⣩⢝⣛⡿⠿⣿⣿⣆⢝
+⣿⣿⢡⣸⣿⣏⣿⣿⣶⣯⣙⠫⢺⣿⣷⡈⣿⣿⣿⣿⡿⠿⢿⣟⣒⣋⣙⠊
+⣿⡏⡿⣛⣍⢿⣮⣿⣿⣿⣿⣿⣿⣿⣶⣶⣶⣶⣾⣿⣿⣿⣿⣿⣿⣿⣿⣿
+⣿⢱⣾⣿⣿⣿⣝⡮⡻⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡿⠿⠛⣋⣻⣿⣿⣿⣿
+⢿⢸⣿⣿⣿⣿⣿⣿⣷⣽⣿⣿⣿⣿⣿⣿⣿⡕⣡⣴⣶⣿⣿⣿⡟⣿⣿⣿
+⣦⡸⣿⣿⣿⣿⣿⣿⡛⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⡇⣿⣿⣿
+⢛⠷⡹⣿⠋⣉⣠⣤⣶⣶⣿⣿⣿⣿⣿⣿⡿⠿⢿⣿⣿⣿⣿⣿⣷⢹⣿⣿
+⣷⡝⣿⡞⣿⣿⣿⣿⣿⣿⣿⣿⡟⠋⠁⣠⣤⣤⣦⣽⣿⣿⣿⡿⠋⠘⣿⣿
+⣿⣿⡹⣿⡼⣿⣿⣿⣿⣿⣿⣿⣧⡰⣿⣿⣿⣿⣿⣹⡿⠟⠉⡀⠄⠄⢿⣿
+⣿⣿⣿⣽⣿⣼⣛⠿⠿⣿⣿⣿⣿⣿⣯⣿⠿⢟⣻⡽⢚⣤⡞⠄⠄⠄⢸⣿
+-->
+<html>
+  <head>
+    <title>hentaisupplier - stats</title>
+    <meta property="og:title" content="stats" />
+    <meta property="og:image" content="./img/c_img_1.png" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Nunito+Sans&display=swap" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU=" crossorigin="anonymous"></script>
+    <script src="/js/main.js" type="text/javascript"></script>
+  </head>
+
+  <body onload="bg()">
+    <div class="nf">
+    <header>
+        <div class="headmain">
+          <div class="topbar">
+            <div class="logo">
+              <p>hentai |</p>
+            </div>
+            <ul>
+              <li><a href="/">home</a></li>
+              <li><a href="/stats">stats</a></li>
+              <li><a href="/team">team</a></li>
+            </ul>
+            <div class="logo">
+              <p>| supplier</p>
+            </div>
+          </div>
+          <section class="headimg">
+            <div class="headov">
+              <p>statistics</p>
+            </div>
+          </section>
+          <div class="botbar">
+            <p>artwork taken from <a href="https://bang-dream-gbp-en.bushiroad.com/" target="_blank" class="link">Bang Dream</a></p>
+          </div>
+        </div>
+    </header>
+    <div class="content">
+      <div class="statgrid">
+        <div class="csub">
+          <h1>messages</h1>
+          <p>received messages since last restart:</p>
+          <p style="margin: 0 1vh">server: <span class="hilight"><%= stats["msgcount"] %></span></p>
+          <p style="margin: 0 1vh">private: <span class="hilight"><%= stats["pmsg"] %></span></p>
+        </div>
+      <div class="csub">
+        <div>
+          <h1>servers</h1>
+          <p>The bot is currently on <span class="hilight"><%= stats["servers"] %></span> servers with <span class="hilight"><%= stats["channels"] %></span> channels and <span class="hilight"><%= stats["users"] %></span> users.</p>
+        </div>
+      </div>
+      <div class="csub">
+        <div>
+          <h1>website</h1>
+          <p>uptime: <span class="hilight"><%= time %></span></p><br>
+          <p>requests since last restart:</p>
+          <p style="margin: 0 1vh">home: <span class="hilight" id="home"><%= stats["home"] %></span></p>
+          <p style="margin: 0 1vh">stats: <span class="hilight" id="stats"><%= stats["stats"] %></span></p>
+          <p style="margin: 0 1vh">dev: <span class="hilight" id="team"><%= stats["team"] %></span></p>
+          <p style="margin: 0 1vh">contact: <span class="hilight" id="contact"><%= stats["contact"] %></span></p>
+          <p style="margin: 0 1vh">404: <span class="hilight" id="404"><%= stats["pgnf"] %></span></p>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <footer>
+      <a href="/contact" class="link">contact</a>
+    </footer>
+  </body>
+</html>

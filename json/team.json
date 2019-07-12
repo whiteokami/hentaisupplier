@@ -1,0 +1,23 @@
+{
+  "1":{
+    "name": "suretic",
+    "img": "/img/cntct.png",
+    "github": "suretic",
+    "twitter": "suretic",
+    "youtube": null,
+    "discord": "suretic#5364",
+    "role": "developer",
+    "show": true
+  },
+
+  "2":{
+    "name": "testdev123",
+    "img": "https://pbs.twimg.com/media/D-jJ2efXkAAXroS.jpg:large",
+    "github": null,
+    "twitter": "testdev123",
+    "youtube": "https://youtube.com/c/hoesmad",
+    "discord": "test#0001",
+    "role": "fuck off",
+    "show": false
+  }
+}

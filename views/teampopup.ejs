@@ -1,0 +1,24 @@
+  <div class="popupbar">
+    <div class="close">
+      <button onClick="closepopup()" id="devclose">X</button>
+    </div>
+    <div class="role">
+      <p><%= meminf["role"] %></p>
+    </div>
+  </div>
+  <div class="popupmain">
+    <div class="pople">
+      <img src="<%= meminf["img"] %>" class="popimg"><br>
+    </div>
+    <div class="popri">
+      <div class="poptitle">
+      <h1><%= meminf["name"] %></h1>
+        <p class="hilight"><%= meminf["discord"] %></p>
+      </div>
+      <div class="smcontainer">
+        <% if(meminf["github"] != null) { %><a href="https://github.com/<%= meminf["github"] %>"><img src="/img/GitHub-Mark-Light-120px-plus.png" class="sm"></a><% } %>
+        <% if(meminf["twitter"] != null) { %><a href="https://twitter.com/<%= meminf["twitter"] %>"><img src="/img/Twitter_Logo_Blue.svg" class="sm"></a><% } %>
+        <% if(meminf["youtube"] != null) { %><a href="<%= meminf["youtube"] %>"><img src="/img/youtube_social_icon_red.png" class="sm"></a><% } %>
+      </div>
+    </div>
+  </div>
