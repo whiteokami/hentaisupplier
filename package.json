@@ -9,9 +9,10 @@
   "author": "suretic",
   "license": "ISC",
   "dependencies": {
-    "discord": "^0.8.2",
     "discord.js": "^11.4.2",
     "got": "^7.1.0",
-    "snoowrap": "^1.15.2"
+    "snoowrap": "^1.15.2",
+    "express": "4.13.3",
+    "ejs": "^2.6.2"
   }
 }
