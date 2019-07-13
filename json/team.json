@@ -7,6 +7,7 @@
     "youtube": null,
     "discord": "suretic#5364",
     "role": "developer",
+    "og": "hello",
     "show": true
   },
 
@@ -18,6 +19,7 @@
     "youtube": "https://youtube.com/c/hoesmad",
     "discord": "test#0001",
     "role": "fuck off",
+    "og": "this is an open graph test",
     "show": false
   }
 }
