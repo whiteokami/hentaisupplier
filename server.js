@@ -146,6 +146,7 @@ function shrinkobj() {
     delete a[i+1]["youtube"];
     delete a[i+1]["discord"];
     delete a[i+1]["role"];
+    delete a[i+1]["og"];
     delete a[i+1]["show"];
   }
   return a;
