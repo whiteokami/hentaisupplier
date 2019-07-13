@@ -53,10 +53,17 @@ client.on("ready", function(){
       statusswitch++;
       console.log(`[BOT] status changed to "streaming"`);
     }else{
-      client.user.setStatus("dnd");
-      client.user.setActivity("Hentai", {type: "WATCHING"});
-      statusswitch--;
-      console.log(`[BOT] status changed to "watching"`);
+      if(statusswitch == 1){
+        client.user.setStatus("dnd");
+        client.user.setActivity("Hentai", {type: "WATCHING"});
+        statusswitch++;
+        console.log(`[BOT] status changed to "watching"`);
+      }else{
+        client.user.setStatus("dnd");
+        client.user.setActivity(`hentaisupplier.cf`, {type: "STREAMING", url: "https://twitch.tv/suretic"});
+        statusswitch == 0;
+        console.log(`[BOT] status changed to "watching"`);
+      }
     }
   },450000);
 
