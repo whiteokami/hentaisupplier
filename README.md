@@ -11,7 +11,7 @@ You can see an example of the bot posting here:
 (real posts are not blurred)
 
 ## adding the bot
-If you'd like to have the bot on your server too, just hit me up on Twitter (@suretic) or Discord (suretic#5364).
+If you'd like to have the bot on your server too, just hit me up on Twitter (@suretic) ~~or Discord (suretic#5364)~~.
 
 ## code
 I used some of the code of https://github.com/cawolfkreo/discord-reddit-bot to get posts from reddit.
