@@ -1,3 +1,4 @@
+//https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/first-bot/a-basic-command-handler.md
 const fs = require('fs');
 const {pfx} = require("../config.json");
 module.exports = {

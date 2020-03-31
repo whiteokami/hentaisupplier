@@ -13,7 +13,6 @@ module.exports = {
     .addField("servers", `${client.guilds.size}`)
     .addField("received messages since last restart", msgc)
     .addBlankField()
-    .setFooter("Want this bot on your server? → ask suretic#5364", client.user.avatarURL)
     msg.channel.send(eminfo);
   },
 };

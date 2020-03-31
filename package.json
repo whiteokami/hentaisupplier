@@ -4,15 +4,13 @@
   "description": "",
   "main": "hs_v2.js",
   "scripts": {
-    "start": "node server.js"
+    "start": "node hs_v2.js"
   },
   "author": "suretic",
   "license": "ISC",
   "dependencies": {
     "discord.js": "^11.4.2",
     "got": "^7.1.0",
-    "snoowrap": "^1.15.2",
-    "express": "4.13.3",
-    "ejs": "^2.6.2"
+    "snoowrap": "^1.15.2"
   }
 }

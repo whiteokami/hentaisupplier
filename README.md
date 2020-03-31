@@ -11,7 +11,8 @@ You can see an example of the bot posting here:
 (real posts are not blurred)
 
 ## code
-I used some of the code of https://github.com/cawolfkreo/discord-reddit-bot to get posts from reddit.
-I also used the command handler from https://discordjs.guide/command-handling/ and the reload command from https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/first-bot/a-basic-command-handler.md
-
-Thank you for making those guides!
+This is an old project with shitty code xd
+Here are the guides and reference I used:
+https://github.com/cawolfkreo/discord-reddit-bot
+https://discordjs.guide/command-handling/
+https://github.com/AnIdiotsGuide/discordjs-bot-guide/blob/master/first-bot/a-basic-command-handler.md
