@@ -1,5 +1,7 @@
 # hentaisupplier
 
+[![State-of-the-art Shitcode](https://img.shields.io/static/v1?label=hentaisupplier&message=Shitcode&color=7B5804)](https://github.com/trekhleb/state-of-the-art-shitcode)
+
 This is a Discord bot that mirrors r/hentai.
 It posts every hour.
 
